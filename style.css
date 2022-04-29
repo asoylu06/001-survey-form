@@ -1,0 +1,108 @@
+body{
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url("./background_image.jpg");
+  z-index: -1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+main {
+  position: relative;
+  width: 90%;
+  height: fit-content;
+  margin: 50px auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+form {
+  width: 350px;
+  height: fit-content;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.7);
+  /* border-radius: 3%; */
+}
+
+.heading {
+  color: white;
+  font-weight: 900;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.heading > h1 {
+  font-size: 2.8rem;
+  font-weight: 900;
+  font-family: 'Poppins', sans-serif;
+  line-height: auto;
+  margin-bottom: 0.2em;
+  initial-letter: 1.5;
+}
+
+.heading > h1:first-letter {
+  font-size: 3.2rem;
+}
+
+.heading > h1 > span {
+  color: red;
+}
+
+.heading > h1 > span > span {
+  font-size: 3.2rem;
+}
+
+.heading > p {
+  font-weight: 100;
+}
+
+#description {
+  font-style: italic;
+  margin-top: 0em;
+}
+
+.survey-item {
+  font-size: 1.2em;
+  min-height: 1.8em;
+  color: white;
+  margin-top: 0.9em;
+}
+
+#movie-types > p, #genders > p {
+  padding: 0;
+  margin: 0;
+}
+
+#submit-button {
+  text-align: center;
+}
+
+input[type=text], input[type=email], input[type=number], select[id="dropdown"], textarea[id="comm-sugg"] {
+  width: 100%;
+  padding: 10px;
+  margin: 4px 0;
+  box-sizing: border-box;
+  /* border-radius: 7px; */
+  resize: none;
+  font-family: inherit;
+  font-size: 15px;
+}
+
+legend {
+  margin-bottom: 0.2em;
+}
+
+#submit{
+    width: 45%;
+    padding: 0.75rem;
+    background: red;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+}

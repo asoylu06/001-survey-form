@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Survey Form Work">
+  <meta name="keywords" content="CSS, learn, coding">
+  <meta name="author" content="Ali SOYLU">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="main">
+    <header class="heading">
+      <h1 id="title">NET<span><span>F</span>LIX</span></h1>
+      <p id="description">Thank you for signing up to Netflix. Tell me more about yourself.</p>
+    </header>
+    
+    <form class="survey-form">
+      <div class="survey-item">
+        <label for="name" id="name-label">Name</label>
+        <input type="text" id="name" placeholder="enter your name" size="30" required>
+      </div>
+      
+      <div class="survey-item" id="age-area">
+        <label for="number" id="number-label">Age</label>
+        <input type="number" id="number" placeholder="age" min="0" max="150">
+      </div>
+
+      <div class="survey-item" id="email-area">
+        <label for="email" id="email-label" required>Email</label>
+        <input type="email" id="email" placeholder="Enter Your Email" size="30" pattern ="/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/" required>
+      </div>
+           
+      <div class="survey-item" id="dropdown-list">
+        <label for="dropdown" id="dropdown">Content Type</label>
+          <select  id="dropdown" name="dropdown-menu">
+            <option selected disabled>Series</option>
+            <option value="series-a">Series-A</option>
+            <option value="series-b">Series-B</option>
+            <option value="series-c">Series-C</option>
+            <option value="series-d">Series-D</option>
+            <option value="other">Other</option>
+          </select>
+      </div>
+      
+      <div class="survey-item" id="movie-types">
+        <legend id="checkbox-header">Movie Type</legend>
+          <p><input type="checkbox" id="comedy" name="improvement" value="comedy" required><Label for="comedy">Comedy</Label></p>
+          <p><input type="checkbox" id="action" name="improvement" value="action" required><Label for="action">Action</Label></p>
+          <p><input type="checkbox" id="romance" name="improvement" value="romance" required><Label for="front-end">Romance</Label></p>
+      </div>
+
+      <div class="survey-item" id="genders">
+        <legend id="radio-button-header">Gender</legend>
+          <p><input type="radio" id="male" name="gender" value="male">
+          <label for="male">Male</label></p>
+          <p><input type="radio" id="female" name="gender" value="female">
+          <label for="female">Female</label></p>
+          <p><input type="radio" id="other" name="gender" value="other">
+          <label for="other">Other</label></p>
+      </div>
+            
+      <div class="survey-item" id="comment"> 
+        <label for="comm-sugg">Feedback</label><br>
+        <textarea name="comm-sugg" id="comm-sugg" cols="30" rows="6" placeholder="any comment" maxlength="300"></textarea>
+      </div>
+      
+      <div class="survey-item" id="submit-button">
+        <button type="submit" id="submit">Send</button>
+      </div>
+        
+    </form>
+  </main>
+</body>
+</html>
